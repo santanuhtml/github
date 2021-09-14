@@ -115,7 +115,7 @@ V.Push
 --------------------------
 Local Repository to REMOT(GITHUB)
 
-1. If note linked with Remot and Local Repository:
+1. If linked with Remot and Local Repository:
 git checkout main
 git push origin main
 
@@ -124,14 +124,16 @@ git push origin change1
 
 2. If note linked with Remot and Local Repository:
 git remote add origin https://github.com/santanuhtml/1.git
+git remote --v
 git checkout main
+
 
 --------------------------
 VI.Pull
 --------------------------
 REMOT to Local Repository
 
-git pull
+git clone https://github.com/santanuhtml/github
 
 
 --------------------------
@@ -157,3 +159,8 @@ VIII.Windows Credentials
 --------------------------
 To remove push denied to user, we can remove saved git Credentials
 from Windows Credentials.
+
+
+
+
+
