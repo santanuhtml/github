@@ -1,0 +1,164 @@
+GITHUB BASIC
+
+I.  Basic Command
+II. Basic Git Command
+III.Branch
+IV.Merge
+V.Push
+VI.Pull
+VII.Config
+
+--------------------------
+I. Basic Command
+--------------------------
+1. Creating Folder:
+   mkdir folderName
+
+2. Creating File:
+   touch fileName.extension
+   Example: 
+    touch one.txt
+    touch index.php
+
+3. To see all file and folders:
+   ls
+
+4. To clear all typed command:
+   clear
+
+5. To insert any folder:
+   cd folderName
+
+
+6. To Move back one step:
+   cd ../ 
+
+
+7. To check folder root
+   pwd
+
+
+--------------------------
+II. Basic Git Command
+--------------------------
+1. Install Git Repository
+   git init
+
+
+2. Remove Git Repository
+   git checkout main  
+   rm -rf .git
+
+
+3. Move to Stage
+  
+  i.[Add all files and folders]
+  git add .  
+  
+  ii.[Add only selectd file]
+  git add fileName.txt  
+
+  iii.[Add all files with same extension]
+  git add *.extensiton
+  Example: 
+  git add *.php
+  git add *.txt
+
+4. To check file status
+   git status
+
+5. Stage to Local
+   git reset
+
+6. Stage to Local Repository (called COMMIT)
+git commit -m "Message"
+
+7. Local Repository to Stage
+git reset HEAD~
+
+--------------------------
+III. Branch 
+--------------------------
+1. To Check Barnch location
+git branch
+
+
+2. Crating a branch
+git branch newBranchName
+
+3. Move to Branch
+git checkout branchName
+
+
+--------------------------
+IV.Merge
+--------------------------
+Let have two branchs, main (default branch) and change1
+So we first merge main branch inside the change1 after this 
+we marge chagne1 branch to the main branch.
+
+git checkout change1
+git branch
+git merge main -m "Merge main barnch to the change1"
+
+git checkout main
+git branch
+git merge change1 -m "Merge change1 to the main"
+
+
+--------------------------
+V.Push
+--------------------------
+Local Repository to REMOT(GITHUB)
+
+git checkout main
+git push origin main
+
+git checkout change1
+git push origin change1
+
+
+--------------------------
+VI.Pull
+--------------------------
+REMOT to Local Repository
+
+git pull
+
+
+--------------------------
+VII.Config
+--------------------------
+1. To config global
+git config --global user.name santanuhtml
+git config --global user.email santanuchowdhury04@gmail.com
+
+2. To confing each
+git config user.name santanuhtml
+git config user.email santanuchowdhury04@gmail.com
+
+2. To show Config user name:
+git config user.name
+
+3. To show Config user email
+git config user.email
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
