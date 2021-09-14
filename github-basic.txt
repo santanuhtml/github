@@ -137,28 +137,9 @@ git config --global user.email santanuchowdhury04@gmail.com
 git config user.name santanuhtml
 git config user.email santanuchowdhury04@gmail.com
 
-2. To show Config user name:
+3. To show Config user name:
 git config user.name
 
-3. To show Config user email
+4. To show Config user email
 git config user.email
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
