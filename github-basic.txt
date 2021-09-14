@@ -7,6 +7,7 @@ IV.Merge
 V.Push
 VI.Pull
 VII.Config
+VIII.Windows Credentials
 
 --------------------------
 I. Basic Command
@@ -76,6 +77,9 @@ git commit -m "Message"
 7. Local Repository to Stage
 git reset HEAD~
 
+8. Change master to main
+   git branch -M main
+
 --------------------------
 III. Branch 
 --------------------------
@@ -111,12 +115,16 @@ V.Push
 --------------------------
 Local Repository to REMOT(GITHUB)
 
+1. If note linked with Remot and Local Repository:
 git checkout main
 git push origin main
 
 git checkout change1
 git push origin change1
 
+2. If note linked with Remot and Local Repository:
+git remote add origin https://github.com/santanuhtml/1.git
+git checkout main
 
 --------------------------
 VI.Pull
@@ -143,3 +151,9 @@ git config user.name
 4. To show Config user email
 git config user.email
 
+
+--------------------------
+VIII.Windows Credentials
+--------------------------
+To remove push denied to user, we can remove saved git Credentials
+from Windows Credentials.
